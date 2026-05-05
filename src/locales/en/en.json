@@ -1,0 +1,25 @@
+{
+  "header": {
+    "home": "Home",
+    "contact": "Contact"
+  },
+  "hero": {
+    "role": "Frontend Developer",
+    "greeting": "Hi, I'm",
+    "name": "Sabina",
+    "surname": "Kasumova",
+    "bio": "IT Specialist & Frontend Developer | Pragmatic, responsible and collaborative | Russia",
+    "view_CV": {
+      "button_title": "View CV",
+      "modal_title": "Download CV",
+      "english_CV": "English CV",
+      "russian_CV": "Russian CV",
+      "japanese_CV": "Japanese CV"
+    },
+    "avatar": {
+      "img1": "Tap Tap me 👀",
+      "img2": "One more Tap 😏",
+      "img3": "Hello there 👋"
+    }
+  }
+}

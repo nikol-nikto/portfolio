@@ -1,0 +1,65 @@
+/** @format */
+
+@import "tailwindcss";
+
+.App {
+  font-family: "Nunito", sans-serif;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    scale: 90%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    scale: 100%;
+  }
+  to {
+    opacity: 0;
+    scale: 90%;
+  }
+}
+
+@keyframes rotatedFadeIn {
+  from {
+    opacity: 0;
+    rotate: -15deg;
+    scale: 90%;
+  }
+  to {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 100%;
+  }
+}
+
+@keyframes rotatedFadeOut {
+  from {
+    opacity: 1;
+    rotate: 0deg;
+    scale: 100%;
+  }
+  to {
+    opacity: 0;
+    rotate: 15deg;
+    scale: 90%;
+  }
+}
