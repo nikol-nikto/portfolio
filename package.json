@@ -13,6 +13,7 @@
     "@tailwindcss/container-queries": "^0.1.1",
     "@tailwindcss/vite": "^4.2.4",
     "fitty": "^2.4.2",
+    "framer-motion": "^12.38.0",
     "i18next": "^26.0.8",
     "motion": "^12.38.0",
     "react": "^19.2.4",

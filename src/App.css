@@ -2,8 +2,10 @@
 
 @import "tailwindcss";
 
-.App {
-  font-family: "Nunito", sans-serif;
+@media (max-width: 680px) {
+  #experience [style*="grid-template-columns: 1fr 32px 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
 }
 
 @keyframes fadeUp {
