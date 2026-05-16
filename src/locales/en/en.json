@@ -21,5 +21,42 @@
       "img2": "One more Tap 😏",
       "img3": "Hello there 👋"
     }
+  },
+  "experience_section": {
+    "career": "career",
+    "my": "My",
+    "experience": "experience."
+  },
+  "experience_data": {
+    "job1": {
+      "period": "Aug —\nSep 2025",
+      "dateRange": "Mid Aug 2025 – Sep 2025",
+      "title": "Frontend Developer Intern",
+      "location": "Remote · Russia",
+      "type": "Internship",
+      "tasks": {
+        "task1": "Onboarded into a production React + TypeScript codebase.",
+        "task2": "Fixed UI bugs and minor visual inconsistencies across components.",
+        "task3": "Worked with REST API data: fetching, handling loading and error states.",
+        "task4": "Implemented small UI features under guidance, following existing design patterns.",
+        "task5": "Participated in testing and helped identify cross-browser issues."
+      }
+    },
+    "job2": {
+      "period": "Sep 2025 —\nPresent",
+      "dateRange": "Sep 2025 – Present",
+      "title": "Frontend Developer",
+      "location": "Remote · Russia",
+      "type": "Full-time",
+      "tasks": {
+        "task1": "Developed new frontend features using React and TypeScript.",
+        "task2": "Designed and implemented reusable UI components and internal interface patterns.",
+        "task3": "Managed complex application state using MobX and optimized its structure.",
+        "task4": "Integrated REST APIs using fetch and improved data handling consistency across modules.",
+        "task5": "Translated Figma designs into responsive, production-ready interfaces.",
+        "task6": "Improved performance by reducing unnecessary re-renders.",
+        "task7": "Participated in code reviews, refactoring, and improving codebase quality."
+      }
+    }
   }
 }

@@ -7,7 +7,8 @@ interface Job {
   title: string;
   company: string;
   location: string;
-  type: "Internship" | "Full-time";
+  // type: "Internship" | "Full-time";
+  type: string;
   tasks: string[];
   tags: string[];
 }
