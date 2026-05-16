@@ -16,9 +16,10 @@ function Experience() {
   });
 
   const smoothProgress = useSpring(scrollYProgress, {
-    stiffness: 50,
-    damping: 20,
-    restDelta: 0.001,
+    stiffness: 32,
+    damping: 18,
+    mass: 0.7,
+    restDelta: 0.0005,
   });
 
   const fillHeight = useTransform(smoothProgress, [0, 1], ["0%", "100%"]);
@@ -36,7 +37,7 @@ function Experience() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-50px" }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="mb-[clamp(3rem,7vw,6rem)]"
+          className={`mb-[clamp(3rem,7vw,6rem)]`}
         >
           <p
             className={`font-jetbrains-mono text-xs tracking-[0.22em] uppercase

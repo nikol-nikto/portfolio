@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
+import { motion } from "framer-motion";
 import AnimatedRingSvg from "../components/AnimatedRing.tsx";
 
 import img1 from "../assets/image/toothless.jpg";
@@ -34,7 +35,15 @@ function Avatar() {
   };
 
   return (
-    <div
+    <motion.div
+      animate={{
+        y: [0, -6, 0],
+      }}
+      transition={{
+        duration: 7,
+        repeat: Infinity,
+        ease: "easeInOut",
+      }}
       className="relative w-75 h-75 xl:w-112.5 xl:h-112.5 cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -75,7 +84,7 @@ function Avatar() {
       >
         {slides[currentImage].text}
       </div>
-    </div>
+    </motion.div>
   );
 }
 

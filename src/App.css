@@ -2,10 +2,16 @@
 
 @import "tailwindcss";
 
-@media (max-width: 680px) {
-  #experience [style*="grid-template-columns: 1fr 32px 1fr"] {
-    grid-template-columns: 1fr !important;
-  }
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
 }
 
 @keyframes fadeUp {

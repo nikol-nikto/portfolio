@@ -18,7 +18,7 @@ function TimelineItem({ job, index }: TimelineItemProps) {
   return (
     <div
       ref={ref}
-      className={`relative min-h-110 grid grid-cols-[1fr_32px_1fr]`}
+      className={`relative min-h-110 grid lg:grid-cols-[1fr_32px_1fr] grid-cols-1`}
     >
       <div className={`pr-10 pb-20`}>
         <div className={`sticky top-[38vh] text-right`}>
@@ -68,9 +68,25 @@ function TimelineItem({ job, index }: TimelineItemProps) {
 
       <div style={{ paddingLeft: "2.5rem", paddingBottom: "5rem" }}>
         <motion.div
-          initial={{ opacity: 0, y: 28 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ duration: 0.7, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
+          initial={{
+            opacity: 0,
+            y: 40,
+            filter: "blur(6px)",
+          }}
+          animate={
+            inView
+              ? {
+                  opacity: 1,
+                  y: 0,
+                  filter: "blur(0px)",
+                }
+              : {}
+          }
+          transition={{
+            duration: 1,
+            delay: 0.08,
+            ease: [0.22, 1, 0.36, 1],
+          }}
         >
           <p
             className={`font-jetbrains-mono text-[0.65rem] tracking-[0.16rem] uppercase
@@ -98,7 +114,7 @@ function TimelineItem({ job, index }: TimelineItemProps) {
                 key={ti}
                 initial={{ opacity: 0, x: 14 }}
                 animate={inView ? { opacity: 1, x: 0 } : {}}
-                transition={{ duration: 0.45, delay: 0.22 + ti * 0.065 }}
+                transition={{ duration: 0.45, delay: 0.3 + ti * 0.09 }}
                 className={`flex gap-[0.65rem] items-start font-jetbrains-mono text-[clamp(0.73rem,1vw,0.82rem)]
                     text-[rgba(255,255,255,0.55)] leading-[1.8] font-light`}
               >
