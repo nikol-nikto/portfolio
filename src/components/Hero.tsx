@@ -1,7 +1,7 @@
 /** @format */
 
 import { useTranslation } from "react-i18next";
-import { Socials } from "../utils/Socials";
+import { socials } from "../utils/Socials";
 import Avatar from "./Avatar";
 import CVSelector from "./CVSelector";
 
@@ -9,7 +9,10 @@ function Hero({ selectedLanguage }: { selectedLanguage: string }) {
   const { t } = useTranslation();
 
   return (
-    <section className="min-h-screen flex items-start justify-center bg-[#0a0a0f] text-white px-6 pt-25 lg:pt-40">
+    <section
+      id="hero"
+      className="min-h-screen flex items-start justify-center text-white px-6 pt-25 lg:pt-40"
+    >
       <div
         className={`absolute inset-0 pointer-events-none bg-size-[80px_80px]
         bg-[linear-gradient(rgba(0,255,153,0.035)_3px,transparent_3px),linear-gradient(90deg,rgba(0,255,153,0.035)_3px,transparent_3px)]
@@ -68,7 +71,10 @@ function Hero({ selectedLanguage }: { selectedLanguage: string }) {
             </div>
           </div>
 
-          <p className="text-sm lg:text-base mt-6 mx-6 lg:mx-0 text-gray-400 max-w-xs lg:max-w-md tracking-wide animate-[fadeUp_1s_ease_0.9s_forwards] opacity-0">
+          <p
+            className={`text-sm lg:text-base mt-6 mx-6 lg:mx-0 text-gray-400 max-w-xs lg:max-w-md
+              tracking-wide animate-[fadeUp_1s_ease_0.9s_forwards] opacity-0`}
+          >
             {t("hero.bio")}
           </p>
 
@@ -79,7 +85,7 @@ function Hero({ selectedLanguage }: { selectedLanguage: string }) {
             <CVSelector />
 
             <div className="flex gap-4.5">
-              {Socials.map((s) => (
+              {socials.map((s) => (
                 <a
                   key={s.label}
                   href={s.href}
