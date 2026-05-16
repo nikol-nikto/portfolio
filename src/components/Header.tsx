@@ -29,7 +29,7 @@ function Header({ selectedLanguage, setSelectedLanguage }: HeaderProps) {
             animate={{ x: "100%" }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.8, ease: "easeInOut" }}
-            className="fixed top-0 left-0 h-0.75 w-full bg-emerald-400 z-50"
+            className="fixed top-0 left-0 h-0.75 w-full bg-[#00ff99] z-50"
           />
         )}
       </AnimatePresence>
@@ -43,7 +43,7 @@ function Header({ selectedLanguage, setSelectedLanguage }: HeaderProps) {
           className="text-2xl lg:text-3xl font-semibold flex items-center gap-2"
         >
           Kasumova S.
-          <span className="w-2 h-2 bg-emerald-400 rounded-full" />
+          <span className="w-2 h-2 bg-[#00ff99] rounded-full" />
         </div>
 
         <div className="items-center gap-8 hidden lg:flex">
@@ -51,11 +51,11 @@ function Header({ selectedLanguage, setSelectedLanguage }: HeaderProps) {
             <a
               href="#home"
               onClick={handleReload}
-              className="text-emerald-400 border-b border-emerald-400"
+              className="text-[#00ff99] border-b border-[#00ff99]"
             >
               {t("header.home")}
             </a>
-            <a href="#contact" className="hover:text-emerald-400 transition">
+            <a href="#contact" className="hover:text-[#00ff99] transition">
               {t("header.contact")}
             </a>
           </nav>

@@ -49,7 +49,7 @@ function Hero({ selectedLanguage }: { selectedLanguage: string }) {
 
             <div className="relative inline-block group">
               <span
-                className={`text-emerald-400 text-5xl lg:text-8xl
+                className={`text-[#00ff99] text-shadow-[0_0_45px_rgba(0,255,153,0.3)] text-5xl lg:text-8xl
                   relative z-10 transition-colors duration-300 group-hover:text-black`}
               >
                 {t("hero.name")}
@@ -58,14 +58,14 @@ function Hero({ selectedLanguage }: { selectedLanguage: string }) {
               <br />
 
               <span
-                className={`text-emerald-400 text-5xl lg:text-8xl
+                className={`text-[#00ff99] text-shadow-[0_0_45px_rgba(0,255,153,0.3)] text-5xl lg:text-8xl
                   relative z-10 transition-colors duration-300 group-hover:text-black`}
               >
                 {t("hero.surname")}
               </span>
 
               <div
-                className={`absolute inset-0 bg-emerald-400 transform scale-x-0
+                className={`absolute inset-0 bg-[#00ff99] transform scale-x-0
                   group-hover:scale-x-100 transition-transform duration-500 origin-left rounded`}
               />
             </div>
