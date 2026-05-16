@@ -1,12 +1,15 @@
 /** @format */
 
-import { JOBS } from "../utils/ExperienceData";
+import { getExperienceData } from "../utils/ExperienceData";
 import TimelineItem from "./TimelineItem";
 
 import { useRef } from "react";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 function Experience() {
+  const { t } = useTranslation();
+
   const sectionRef = useRef(null);
   const timelineRef = useRef(null);
 
@@ -43,15 +46,15 @@ function Experience() {
             className={`font-jetbrains-mono text-xs tracking-[0.22em] uppercase
                 text-[rgba(0,255,153,0.45)] mb-3 clamp(0.7rem, 1.5vw, 0.9rem) `}
           >
-            04 · Career
+            04 · {t("experience_section.career")}
           </p>
           <h2
             className={`font-jetbrains-mono font-bold text-[clamp(2.2rem,5.5vw,4.8rem)]
             leading-[1.05] tracking-tight text-white`}
           >
-            My{" "}
+            {t("experience_section.my")}{" "}
             <span className="text-[#00ff99] italic text-shadow-[0_0_45px_rgba(0,255,153,0.3)]">
-              experience.
+              {t("experience_section.experience")}
             </span>
           </h2>
         </motion.div>
@@ -68,7 +71,7 @@ function Experience() {
             />
           </div>
 
-          {JOBS.map((job, i) => (
+          {getExperienceData().map((job, i) => (
             <TimelineItem key={job.id} job={job} index={i} />
           ))}
         </div>
