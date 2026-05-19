@@ -58,5 +58,10 @@
         "task7": "Participated in code reviews, refactoring, and improving codebase quality."
       }
     }
+  },
+  "techstack": {
+    "tools": "Tools",
+    "tech": "Tech",
+    "stack": "stack."
   }
 }
