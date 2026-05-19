@@ -25,7 +25,7 @@
   "experience_section": {
     "career": "キャリア",
     "my": "私の",
-    "experience": "経験."
+    "experience": "経験。"
   },
   "experience_data": {
     "job1": {
@@ -58,5 +58,10 @@
         "task7": "コードレビューおよびリファクタリングに参加し、コード品質向上に貢献した。"
       }
     }
+  },
+  "techstack": {
+    "tools": "ツール",
+    "tech": "テック",
+    "stack": "スタック。"
   }
 }

@@ -44,9 +44,9 @@ function Experience() {
         >
           <p
             className={`font-jetbrains-mono text-xs tracking-[0.22em] uppercase
-                text-[rgba(0,255,153,0.45)] mb-3 clamp(0.7rem, 1.5vw, 0.9rem) `}
+                text-[rgba(0,255,153,0.45)] mb-3 clamp(0.7rem, 1.5vw, 0.9rem)`}
           >
-            04 · {t("experience_section.career")}
+            02 · {t("experience_section.career")}
           </p>
           <h2
             className={`font-jetbrains-mono font-bold text-[clamp(2.2rem,5.5vw,4.8rem)]
