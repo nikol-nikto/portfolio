@@ -63,5 +63,13 @@
     "tools": "Tools",
     "tech": "Tech",
     "stack": "stack."
+  },
+  "contact": {
+    "contact": "Contact",
+    "let's": "Let's",
+    "keep_in_touch": "keep in touch.",
+    "desc1": "I'm open to new opportunities in frontend development",
+    "desc2": "and would love to hear what you have in mind.",
+    "get_in_touch": "Get in Touch"
   }
 }

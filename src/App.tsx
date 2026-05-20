@@ -9,6 +9,7 @@ import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import TechStack from "./components/Techstack";
+import Contact from "./components/Contact";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("Russian");
@@ -52,6 +53,8 @@ function App() {
       <Experience />
 
       <TechStack />
+
+      <Contact />
     </div>
   );
 }
