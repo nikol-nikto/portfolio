@@ -54,10 +54,10 @@ function Contact() {
       ))}
 
       <motion.div
-        initial={{ opacity: 0, y: 32 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-60px" }}
-        transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+        initial={{ opacity: 0, y: 32, filter: "blur(6px)" }}
+        whileInView={{ opacity: 1, y: 0, filter: "none" }}
+        viewport={{ once: true, margin: "-30px" }}
+        transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
         className={`relative z-2 text-center max-w-170`}
       >
         <p

@@ -10,6 +10,7 @@ import Hero from "./components/Hero";
 import Experience from "./components/Experience";
 import TechStack from "./components/Techstack";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("Russian");
@@ -55,6 +56,8 @@ function App() {
       <TechStack />
 
       <Contact />
+
+      <Footer />
     </div>
   );
 }

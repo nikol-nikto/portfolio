@@ -36,10 +36,10 @@ function Experience() {
     >
       <div className="max-w-275 w-full mx-auto relative">
         <motion.div
-          initial={{ opacity: 0, y: 32 }}
-          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: 32, filter: "blur(6px)" }}
+          whileInView={{ opacity: 1, y: 0, filter: "none" }}
           viewport={{ once: true, margin: "-50px" }}
-          transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 1, delay: 0.3, ease: [0.22, 1, 0.36, 1] }}
           className={`mb-[clamp(3rem,7vw,6rem)]`}
         >
           <p
