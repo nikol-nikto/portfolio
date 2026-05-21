@@ -66,7 +66,7 @@ function TimelineItem({ job, index }: TimelineItemProps) {
         />
       </div>
 
-      <div style={{ paddingLeft: "2.5rem", paddingBottom: "5rem" }}>
+      <div className={`pl-10 pb-20`}>
         <motion.div
           initial={{
             opacity: 0,
@@ -119,12 +119,6 @@ function TimelineItem({ job, index }: TimelineItemProps) {
                     text-[rgba(255,255,255,0.55)] leading-[1.8] font-light`}
               >
                 <span
-                  style={{
-                    color: "#00ff99",
-                    flexShrink: 0,
-                    marginTop: "0.2rem",
-                    fontSize: "0.58rem",
-                  }}
                   className={`text-[#00ff99] shrink-0 mt-[0.2rem] text-[0.6rem]`}
                 >
                   ▸

@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { AnimatePresence, motion } from "framer-motion";
 import LanguageSelector from "./LanguageSelector";
+import NavLink from "./NavLink";
 
 interface HeaderProps {
   selectedLanguage: string;
@@ -48,15 +49,21 @@ function Header({ selectedLanguage, setSelectedLanguage }: HeaderProps) {
 
         <div className="items-center gap-8 hidden lg:flex">
           <nav className="flex gap-6 text-lg">
-            <a
-              href="#home"
-              onClick={handleReload}
-              className="text-[#00ff99] border-b border-[#00ff99]"
-            >
-              {t("header.home")}
+            <a onClick={handleReload}>
+              <NavLink
+                key={"#hero"}
+                label={t("header.home")}
+                href={"#hero"}
+                styles={`font-nunito`}
+              />
             </a>
-            <a href="#contact" className="hover:text-[#00ff99] transition">
-              {t("header.contact")}
+            <a>
+              <NavLink
+                key={"#contact"}
+                label={t("header.contact")}
+                href={"#contact"}
+                styles={`font-nunito`}
+              />
             </a>
           </nav>
 
