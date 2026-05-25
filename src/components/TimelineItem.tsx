@@ -4,10 +4,10 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import type { Job } from "../types/ExperienceDataTypes";
 
-type TimelineItemProps = {
+interface TimelineItemProps {
   job: Job;
   index: number;
-};
+}
 
 function TimelineItem({ job, index }: TimelineItemProps) {
   const ref = useRef(null);

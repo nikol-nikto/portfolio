@@ -5,7 +5,7 @@ import MarqueeRow from "./MarqueeRow";
 import { row1, row2 } from "../utils/Techs";
 import { useTranslation } from "react-i18next";
 
-function TechStack() {
+function TechStack({ number }: { number: string }) {
   const { t } = useTranslation();
 
   return (
@@ -24,7 +24,7 @@ function TechStack() {
           <p
             className={`font-jetbrains-mono text-[0.7rem] tracking-[0.22em] uppercase text-[rgba(0,255,153,0.45)] mb-3`}
           >
-            03 · {t("techstack.tools")}
+            {number} · {t("techstack.tools")}
           </p>
           <h2
             className={`font-jetbrains-mono text-[clamp(2.2rem,5.5vw,4.8rem)] font-bold text-white leading-[1.05]

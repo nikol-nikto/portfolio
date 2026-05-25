@@ -15,7 +15,7 @@ function ReactSvg({ color = "black", width = 24, height = 24 }: Props) {
       height={height}
     >
       <circle cx="0" cy="0" r="2.05" fill={color} />
-      <g stroke={color} stroke-width="1" fill="none">
+      <g stroke={color} strokeWidth="1" fill="none">
         <ellipse rx="11" ry="4.2" />
         <ellipse rx="11" ry="4.2" transform="rotate(60)" />
         <ellipse rx="11" ry="4.2" transform="rotate(120)" />

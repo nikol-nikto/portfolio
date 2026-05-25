@@ -16,10 +16,10 @@ function FlaskSvg({ color = "black", width = 24, height = 24 }: Props) {
       version="1.1"
       xmlns="http://www.w3.org/2000/svg"
       stroke="#ffffff"
-      stroke-width="0.00032"
+      strokeWidth="0.00032"
       transform="matrix(1, 0, 0, 1, 0, 0)"
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0">
         <rect
           x="-3.2"
           y="-3.2"
@@ -31,8 +31,8 @@ function FlaskSvg({ color = "black", width = 24, height = 24 }: Props) {
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         {" "}

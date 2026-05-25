@@ -9,11 +9,11 @@ interface Props {
 function SQLiteSvg({ color = "black", width = 24, height = 24 }: Props) {
   return (
     <svg viewBox="0 0 32 32" fill={color} width={width} height={height}>
-      <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+      <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <defs>
@@ -26,9 +26,9 @@ function SQLiteSvg({ color = "black", width = 24, height = 24 }: Props) {
             gradientTransform="matrix(0, 11.486, 11.486, 0, -510.889, 1363.307)"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset="0" stop-color="#97d9f6"></stop>
-            <stop offset="0.92" stop-color="#0f80cc"></stop>
-            <stop offset="1" stop-color="#0f80cc"></stop>
+            <stop offset="0" stopColor="#97d9f6"></stop>
+            <stop offset="0.92" stopColor="#0f80cc"></stop>
+            <stop offset="1" stopColor="#0f80cc"></stop>
           </linearGradient>
         </defs>
         <title>file_type_sqlite</title>

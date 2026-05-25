@@ -49,22 +49,22 @@ function Header({ selectedLanguage, setSelectedLanguage }: HeaderProps) {
 
         <div className="items-center gap-8 hidden lg:flex">
           <nav className="flex gap-6 text-lg">
-            <a onClick={handleReload}>
+            <div onClick={handleReload}>
               <NavLink
                 key={"#hero"}
                 label={t("header.home")}
                 href={"#hero"}
                 styles={`font-nunito`}
               />
-            </a>
-            <a>
+            </div>
+            <div>
               <NavLink
                 key={"#contact"}
                 label={t("header.contact")}
                 href={"#contact"}
                 styles={`font-nunito`}
               />
-            </a>
+            </div>
           </nav>
 
           <LanguageSelector
