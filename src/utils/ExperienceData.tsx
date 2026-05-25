@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 
 export function getExperienceData() {
   const { t } = useTranslation();
+
   return [
     {
       id: "fe-intern",

@@ -71,5 +71,29 @@
     "desc1": "フロントエンド開発の新しいチャンスを探しています",
     "desc2": "あなたのアイデアを聞かせてください。",
     "get_in_touch": "メッセージを送る"
+  },
+  "education": {
+    "background": "学歴",
+    "my": "私の",
+    "education": "学歴。",
+    "latest": "最新"
+  },
+  "education_data": {
+    "step1": {
+      "degree": "高等学校",
+      "specialization": "経済分野 (経済クラス)",
+      "period": "2019年9月 – 2021年6月",
+      "institution": "市立予算教育機関 (MBEI) 第51ライセウム",
+      "location": "ロシア マハチカラ",
+      "note": "優秀な成績で卒業 — 金メダル"
+    },
+    "step2": {
+      "degree": "学士号",
+      "specialization": "情報システムとプログラミング",
+      "period": "2021年9月 – 2025年6月",
+      "institution": "ダゲスタン国立大学 情報学・情報技術学部 (FIIT)",
+      "location": "ロシア マハチカラ",
+      "note": "優秀な成績で卒業 — 赤卒業証書 (優等学位)"
+    }
   }
 }

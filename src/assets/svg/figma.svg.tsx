@@ -15,7 +15,7 @@ function FigmaSvg({ color = "black", width = 24, height = 24 }: Props) {
       width={width}
       height={height}
     >
-      <g id="SVGRepo_bgCarrier" stroke-width="0">
+      <g id="SVGRepo_bgCarrier" strokeWidth="0">
         <rect
           x="-1.6"
           y="-1.6"
@@ -27,8 +27,8 @@ function FigmaSvg({ color = "black", width = 24, height = 24 }: Props) {
       </g>
       <g
         id="SVGRepo_tracerCarrier"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+        strokeLinecap="round"
+        strokeLinejoin="round"
       ></g>
       <g id="SVGRepo_iconCarrier">
         <path

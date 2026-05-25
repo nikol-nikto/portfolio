@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import CornerSvg from "../assets/svg/corner.svg";
 
-function Contact() {
+function Contact({ number }: { number: string }) {
   const { t } = useTranslation();
   const [hovered, setHovered] = useState(false);
 
@@ -63,7 +63,7 @@ function Contact() {
         <p
           className={`font-jetbrains-mono text-[0.7rem] tracking-[0.22em] uppercase text-[rgba(0,255,153,0.45)] mb-6`}
         >
-          05 · {t("contact.contact")}
+          {number} · {t("contact.contact")}
         </p>
 
         <h2

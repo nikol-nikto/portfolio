@@ -71,5 +71,29 @@
     "desc1": "I'm open to new opportunities in frontend development",
     "desc2": "and would love to hear what you have in mind.",
     "get_in_touch": "Get in Touch"
+  },
+  "education": {
+    "background": "background",
+    "my": "My",
+    "education": "education.",
+    "latest": "Latest"
+  },
+  "education_data": {
+    "step1": {
+      "degree": "High School",
+      "specialization": "Economic profile",
+      "period": "Sep 2019 – Jun 2021",
+      "institution": "MBEI Lyceum No. 51",
+      "location": "Makhachkala, Russia",
+      "note": "Graduated with honours — Gold Medal"
+    },
+    "step2": {
+      "degree": "Bachelor's Degree",
+      "specialization": "Information Systems & Programming",
+      "period": "Sep 2021 – Jun 2025",
+      "institution": "Dagestan State University, FIIT",
+      "location": "Makhachkala, Russia",
+      "note": "Graduated with Red Diploma (Honours)"
+    }
   }
 }

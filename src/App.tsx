@@ -11,6 +11,8 @@ import Experience from "./components/Experience";
 import TechStack from "./components/Techstack";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import Education from "./components/Education";
+import Projects from "./components/Projects";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("Russian");
@@ -51,11 +53,15 @@ function App() {
 
       <Hero selectedLanguage={selectedLanguage} />
 
-      <Experience />
+      <Experience number="02" />
 
-      <TechStack />
+      <TechStack number="03" />
 
-      <Contact />
+      <Projects number="04" />
+
+      <Education number="05" />
+
+      <Contact number="06" />
 
       <Footer />
     </div>
