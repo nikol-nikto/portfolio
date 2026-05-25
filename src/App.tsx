@@ -12,7 +12,6 @@ import TechStack from "./components/Techstack";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
-import Projects from "./components/Projects";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("Russian");
@@ -56,8 +55,6 @@ function App() {
       <Experience number="02" />
 
       <TechStack number="03" />
-
-      <Projects number="04" />
 
       <Education number="05" />
 
