@@ -12,6 +12,8 @@ import TechStack from "./components/Techstack";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import Projects from "./components/Projects";
+import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
   const [selectedLanguage, setSelectedLanguage] = useState("Russian");
@@ -44,24 +46,28 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen justify-center font-nunito bg-[#0a0a0f]">
-      <Header
-        selectedLanguage={selectedLanguage}
-        setSelectedLanguage={setSelectedLanguage}
-      />
+    <ThemeProvider>
+      <div className="min-h-screen justify-center font-nunito bg-(--bg-primary)">
+        <Header
+          selectedLanguage={selectedLanguage}
+          setSelectedLanguage={setSelectedLanguage}
+        />
 
-      <Hero selectedLanguage={selectedLanguage} />
+        <Hero selectedLanguage={selectedLanguage} />
 
-      <Experience number="02" />
+        <Experience number="02" />
 
-      <TechStack number="03" />
+        <TechStack number="03" />
 
-      <Education number="05" />
+        <Projects number="04" />
 
-      <Contact number="06" />
+        <Education number="05" />
 
-      <Footer />
-    </div>
+        <Contact number="06" />
+
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 

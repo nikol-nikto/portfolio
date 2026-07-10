@@ -8,7 +8,7 @@ import GitSvg from "../assets/svg/git.svg";
 import HtmlSvg from "../assets/svg/html.svg";
 import JavaScriptSvg from "../assets/svg/javascript.svg";
 import MobxSvg from "../assets/svg/mobx.svg";
-import PostmanSvg from "../assets/svg/postman.svg";
+// import PostmanSvg from "../assets/svg/postman.svg";
 import PythonSvg from "../assets/svg/python.svg";
 import ReactSvg from "../assets/svg/react.svg";
 import SassSvg from "../assets/svg/sass.svg";
@@ -17,7 +17,7 @@ import TailwindSvg from "../assets/svg/tailwind.svg";
 import TypeScriptSvg from "../assets/svg/typescript.svg";
 import VercelSvg from "../assets/svg/vercel.svg";
 import ViteSvg from "../assets/svg/vite.svg";
-import VueSvg from "../assets/svg/vue.svg";
+// import VueSvg from "../assets/svg/vue.svg";
 
 export const techs = [
   {
@@ -62,12 +62,12 @@ export const techs = [
     bg: "#001e26",
     icon: <ReactSvg width={36} height={36} color="#61DAFB" />,
   },
-  {
-    label: "Vue",
-    color: "#42B883",
-    bg: "#001a0f",
-    icon: <VueSvg width={36} height={36} />,
-  },
+  // {
+  //   label: "Vue",
+  //   color: "#42B883",
+  //   bg: "#001a0f",
+  //   icon: <VueSvg width={36} height={36} />,
+  // },
   {
     label: "Vite",
     color: "#646CFF",
@@ -98,12 +98,12 @@ export const techs = [
     bg: "#00121a",
     icon: <SQLiteSvg width={36} height={36} />,
   },
-  {
-    label: "Postman",
-    color: "#FF6C37",
-    bg: "#260f00",
-    icon: <PostmanSvg width={36} height={36} color="#FF6C37" />,
-  },
+  // {
+  //   label: "Postman",
+  //   color: "#FF6C37",
+  //   bg: "#260f00",
+  //   icon: <PostmanSvg width={36} height={36} color="#FF6C37" />,
+  // },
   {
     label: "Docker",
     color: "#2496ED",

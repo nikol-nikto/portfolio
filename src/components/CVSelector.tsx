@@ -11,7 +11,7 @@ function CVSelector() {
   const CVs = [
     { label: t("hero.view_CV.english_CV"), href: "/resume/my-resume-en.pdf" },
     { label: t("hero.view_CV.russian_CV"), href: "/resume/my-resume-ru.pdf" },
-    { label: t("hero.view_CV.japanese_CV"), href: "/resume/my-resume-ja.pdf" },
+    { label: t("hero.view_CV.japanese_CV"), href: "/resume/my-resume-en.pdf" },
   ];
 
   return (

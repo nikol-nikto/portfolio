@@ -71,8 +71,8 @@ function Experience({ number }: { number: string }) {
             />
           </div>
 
-          {getExperienceData().map((job, i) => (
-            <TimelineItem key={job.id} job={job} index={i} />
+          {getExperienceData().map((job, i, array) => (
+            <TimelineItem key={job.id} job={job} index={i} len={array.length} />
           ))}
         </div>
       </div>
