@@ -11,7 +11,8 @@ function Education({ number }: { number: string }) {
   return (
     <section
       id="education"
-      className={`p-[clamp(5rem,10vw,9rem)_clamp(1.5rem,7vw,6rem)] relative overflow-hidden`}
+      className={`p-[clamp(5rem,10vw,9rem)_clamp(1.5rem,7vw,6rem)] relative overflow-hidden
+        bg-[linear-gradient(180deg,var(--bg-section-b)_0%,var(--bg-primary)_100%)]`}
     >
       <div className={`max-w-275 w-full mx-auto relative`}>
         <motion.div

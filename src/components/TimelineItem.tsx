@@ -7,13 +7,15 @@ import type { Job } from "../types/ExperienceDataTypes";
 interface TimelineItemProps {
   job: Job;
   index: number;
+  len: number;
 }
 
-function TimelineItem({ job, index }: TimelineItemProps) {
+function TimelineItem({ job }: TimelineItemProps) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-60px 0px" });
 
-  const isLatest = index === 1;
+  // const isLatest = index === --len;
+  const isLatest = false;
 
   return (
     <div

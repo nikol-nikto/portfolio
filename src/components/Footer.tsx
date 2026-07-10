@@ -2,10 +2,13 @@
 
 import { motion } from "framer-motion";
 import { socials } from "../utils/Socials";
-import { navLinks } from "../utils/NavLinks";
+import { getNavLinks } from "../utils/NavLinks";
 import NavLink from "./NavLink";
+import { useTranslation } from "react-i18next";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   const year = new Date().getFullYear();
 
   return (
@@ -46,15 +49,14 @@ export default function Footer() {
             className={`font-jetbrains-mono text-[0.72rem] tracking-[0.07em] text-[rgba(255,255,255,0.4)] font-light
             max-w-65 leading-[1.75]`}
           >
-            Frontend Developer · Building interfaces that feel as good as they
-            look.
+            {t("footer.text")}
           </p>
         </div>
 
         <nav
           className={`flex flex-wrap gap-y-[0.65rem] gap-x-10 justify-end pt-4`}
         >
-          {navLinks.map((link) => (
+          {getNavLinks().map((link) => (
             <NavLink key={link.href} label={link.label} href={link.href} />
           ))}
         </nav>
@@ -74,7 +76,7 @@ export default function Footer() {
         <p
           className={`font-jetbrains-mono text-[0.62rem] tracking-widest text-[rgba(255,255,255,0.4)]`}
         >
-          © {year} Kasumova Sabina. All rights reserved.
+          © {year} Kasumova Sabina. All rights aren't reserved.
         </p>
 
         <div className={`flex gap-[0.65rem] items-center`}>
