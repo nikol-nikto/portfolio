@@ -12,7 +12,7 @@ import TechStack from "./components/Techstack";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 import { ThemeProvider } from "./context/ThemeContext";
 
 function App() {
@@ -59,11 +59,11 @@ function App() {
 
         <TechStack number="03" />
 
-        <Projects number="04" />
+        {/* <Projects number="04" /> */}
 
-        <Education number="05" />
+        <Education number="04" />
 
-        <Contact number="06" />
+        <Contact number="05" />
 
         <Footer />
       </div>
